@@ -17,7 +17,7 @@ const openWork = e => {
     } else {
       document
         .querySelector(`.a_${selectedWorkParent.dataset.show}`)
-        .classList.toggle('open');
+        .classList.toggle('open');v
       document
         .querySelector(`.work_${selectedWorkParent.dataset.show}`)
         .classList.toggle('color');
