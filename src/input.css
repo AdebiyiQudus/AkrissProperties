@@ -12,6 +12,10 @@ div {
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --gradient-color: linear-gradient(to bottom, rgba(34, 34, 34, 0), #222);
+}
+
 .none {
   display: none;
 }
@@ -28,8 +32,97 @@ div {
 .open {
   display: block;
 }
-.openWork {
+
+.layout_1 {
+  background: var(--gradient-color);
+  width: 87%;
+  margin: 0 auto;
+  transition: 0.3s background-color;
+}
+
+.layout_2 {
+  width: 72%;
+  bottom: 0.5rem;
+  margin: 0 auto;
+  background: var(--gradient-color);
+  transition: 0.3s background-color;
+}
+
+.layout_3 {
+  width: 100%;
+  height: 80%;
+  background: var(--gradient-color);
+}
+.header {
+  position: sticky;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 2000;
+  transition: 0.3s background-color;
+}
+.active {
+  width: 2rem !important;
+  height: 2rem !important;
+  transition: ease-in-out 10s;
+}
+.active :first-child {
+  transform: rotate(45deg) !important;
+  margin-top: 0.9rem !important;
+}
+.active :nth-child(2) {
+  display: none !important;
+}
+.active :last-child {
+  transform: rotate(-45deg) !important;
+  margin-top: -0.2rem !important;
+}
+
+.show {
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+  background-color: #222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.show ul {
   display: block !important;
-  background-color: #fff !important;
-  color: #000 !important;
+  text-align: center;
+  padding-top: 10rem;
+  line-height: 3rem;
+  color: white;
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+@media only screen and (min-width: 1440px) {
+  .layout_1 {
+    background: var(--gradient-color);
+    width: 87%;
+    margin: 0 auto;
+    transition: 0.3s background-color;
+  }
+
+  .layout_2 {
+    width: 72%;
+    bottom: 0.5rem;
+    margin: 0 auto;
+    background: var(--gradient-color);
+    transition: 0.3s background-color;
+  }
+
+  .layout_3 {
+    width: 100%;
+    height: 70%;
+    background: var(--gradient-color);
+  }
 }

@@ -11,71 +11,81 @@
     <script defer src="src/app.js"></script>
   </head>
   <body>
-    <header class="flex justify-between py-8 px-[6%]">
+    <header class="header flex justify-between py-8 px-[6%]" id="navLinks">
       <img src="" alt="Logo" />
-      <nav class="hidden lg:block">
-        <ul class="flex justify-between items-center gap-6">
-          <li class="font-normal"><a href="index.html" class="text-xs">WHAT WE DO </a></li>
+      <nav class="hidden lg:block" id="navs">
+        <ul class="nav__links flex justify-between items-center gap-6">
+          <li class="font-normal"><a href="#rent" class="text-xs nav__link">WHAT WE DO </a></li>
           <li class="font-normal">
-            <a href="#howItWork" class="text-xs" target="_blank"
+            <a href="#howItWorks" class="text-xs nav__link"
               >HOW IT WORKS</a
             >
           </li>
           <li class="font-normal">
-            <a href="#meetTeam" class="text-xs" target="_blank"
+            <a href="team.html" class="text-xs" target="_blank"
               >MEET THE TEAM</a
             >
           </li>
-          <li class="bg-orange-600 px-8 py-3 text-white font-normal">
+          <li class="bg-orange-600 lg:px-8 lg:w-fit w-[60%] lg:m-0 mx-auto px-3 py-3 text-white font-normal">
             
             <a href="contact.html" class="text-xs" target="_blank"
               <button class="text-xs font-normal">CONTACT US</button>
             </a>
+          </li>
     
-          <li class="bg-orange-400 px-8 py-3 text-white font-semibold">
-            <a href="investment.html" class="text-xs">
+          <li class="bg-orange-400 lg:px-8 lg:w-fit w-[60%] lg:m-0 mx-auto mt-5 px-3 py-3 text-white font-semibold">
+            <a href="#" target="_blank" class="text-xs">
               <button class="text-xs font-normal">INVEST WITH US</button>
             </a>
           </li>
         </ul>
       </nav>
-    </header>
-    <section class="mt-3" id="hero">
-      <div class="flex justify-between gap-1 items-center flex-wrap">
-        <div class="w-[100%] lg:w-[45%] ">
-          <img src="img/img_3.jpg" alt="" class="w-full object-cover">
-        </div>
-        <div class=" w-[100%] pl-4 md:w-[50%] lg:w-[53%] lg:ml-4">
-            <h4 class="leading-[1.5rem] text-[14px] text-left lg:text-[20px] text-orange-900 md:text[5px] mt-7 lg:text-left" >GUARENTED RENT, FREE COSMETIC RENOVATION AND OPTIONS OF LEASE PURCHASE </h4>
-            <p class="mt-3 text-[45px] leading-[3rem] lg:text-[7rem] lg:flex lg:flex-wrap lg:leading-[8rem]"> Easy  <span class="text-orange-300"> Property</span> Management.
-            </p>
-            <p class="mt-5 text-orange-900">Are you seeking to enjoy your property investment without hassle, stress free</p>
-           <button class="bg-orange-400 px-8 py-3 text-white font-semibold mt-[1rem]">MEET THE TEAM</button>  
-        </div>
+        <div class="lg:hidden block w-fit z-30" id="bars">      
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
+          <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
       </div>
-    </section>
-    <section id="client">
-      <div class="mt-4 lg:mt-0 bg-orange-800 py-10">
-        <h2 class="text-center text-white font-normal text-[15px] lg:text-[20px]">WORKING WITH SKILLED TENANTS FROM</h2>
+    </header>
+    <section class="section mt-3" id="hero">
+      <div class="relative flex justify-between items-center flex-wrap z-0">
+        <img src="img/gg.avif" alt="" class=" w-[100%]">
+        <div class="bg-layout opacity-[0.5] absolute top-0 bottom-0 right-0 left-0 block z-1"></div>
 
-        <div class="mt-5 flex flex-wrap justify-around gap-2 items-center">
-          <img src="img/client_1.png" alt="" class="w-[10%]">
-          <img src="img/client_2.png" alt="" class="w-[10%]">
-          <img src="img/client_3.png" alt="" class="w-[10%]">
-          <img src="img/client_4.png" alt="" class="w-[10%]">
-          <img src="img/client_5.png" alt="" class="w-[10%]">
        
-        </div>
       </div>
       
     </section>
-    <section id="ethos">
-      <div class="mt-8 text-center h-fit lg:h-[300px] px-[20px] lg:px-[170px] pt-[30px] leading-6">
-        <h2 class="text-orange-900  text-[30px] lg:text-[25px] font-semibold">ETHOS OF COMPANY</h2>
-        <p class="mt-5 leading-8">Akriss property limited is a one stop property agency located in kent. Its aim is to provide high end accommodation to professionals, students, families. We provide long term guaranteed rent of up to 5 years, and as well as management and maintenance of your property with no work from your end</p>
+    <section>
+      <div class="w-[100%] h-fit">
+          <div class="block lg:flex flex-wrap text-center justify-between items-center bg-orange-900 py-8 lg:py-0 px-[2rem] lg:px-[10rem] lg:h-[7rem]]">
+            <p
+            class="text-center  text-white text-[14px] leading-[2rem] lg:text-[1.5rem] z-10 lg:flex lg:flex-wrap lg:leading-[8rem]"
+          >
+            Easy Property Management
+          </p>
+          <button
+            class="mt-4 bg-white px-5 lg:px-8 py-2 lg:py-3 z-10 text-orange-900 font-semibold  lg:mt-[1rem]"
+          > <a href="contact.html" target="_blank
+          ">MEET THE TEAM</a>
+          </button>
+            
+          </div>
+          <div class="">
+            <div class="bg-gray py-4 px-0 text-center lg:px-[10rem]">
+              <p class="text-center lg:text-start"> <span class="text-orange-900">Home</span> > Property Management</p>
+            </div>
+            <div class="lg:px-[10rem] px-6 pb-6">
+              <p class="lg:mt-5 mt-3 pt-[3rem] w-[100%]">We are one Stock Properties Mangananent company,</p>
+              <p class="pt-[2rem] leading-6 lg:w-[50%]">
+                Its aim is to provide high end accommodation to professionals, students, families
+              </p>
+              <p class="pt-[2rem] leading-6 lg:w-[50%]">We provide long term guaranteed rent of up to 5 years, and as well as management and maintenance of your property with no work from your end</p>
+            </div>
+          </div>
+      </div>
     </section>
-    <section id="rent">
-      <div class="offer_1 block mt-4 lg:mt-0 lg:flex flex-wrap items-center gap-4 bg-orange-800">
+    <section class="section" id="rent">
+      <div class="offer_1 block lg:mt-0 lg:flex flex-wrap items-center gap-4 bg-orange-800">
         <div class="lg:w-[40%]">
           <img src="img/bedroom_2.jpg" alt="">
         </div>
@@ -85,7 +95,7 @@
         </div>
       </div>
     </section>
-    <section id="refurb">
+    <section class="section" id="refurb">
       <div class="offer_1 block lg:mt-0 lg:flex flex-wrap justify-between items-center gap-4">
         <div class="lg:pt-0 lg:w-[50%] lg:leading-4 px-5 lg:px-10">
           <h3 class="mt-6 text-orange-900 text-[28px] lg:text-[30px] font-semibold">We finish cosmetic renovations for free. </h3>
@@ -97,7 +107,7 @@
         </div>
       </div>
     </section>
-    <section id="purchase">
+    <section class="section" id="purchase">
       <div class="offer_1 flex flex-wrap-reverse mt-0 lg:mt-0 lg:flex lg:flex-wrap items-center gap-4 bg-orange-800">
         <div class="lg:w-[40%]">
           <img src="img/img_4.jpg" alt="">
@@ -109,30 +119,43 @@
         </div>
       </div>
     </section>
-    <section id="refurb">
+    <section class="section" id="howItWorks">
       <div class="offer_1 block lg:mt-0 lg:flex flex-wrap justify-between items-center gap-4">
         <div class="pt-8 lg:pt-0 lg:w-[50%] lg:leading-4 px-5 lg:px-10">
           <h3 class="mt-6 text-orange-900 text-[28px] lg:text-[30px] font-semibold">How it works.</h3>
           <p class="mt-4 pb-10 lg:pb-0 leading-7 lg:mt-9">            We make our Landlord onboarding process as fast and efficient as possible.</p>
           <div class="how_it_work_container">
             <div class="how_it_work work_1 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer"  data-show="1">
-              <div class="flex justify-start items-center h- text-white font-semibold">
+              <div class="flex justify-between items-center h- text-white font-semibold">
                 <p>3-5 year agreements with guaranteed rent</p>
-
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                  <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>
+                
               </div>
               <div class="a a_1 hidden pt-5 leading-5" data-show="1">
                 <p>Your rent is guaranteed for the entire term of the management agreement with no commissions or hidden fees.</p>
               </div>
             </div>
             <div class="how_it_work work_2 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer"  data-show="2">
-              <p class="flex justify-start items-center h-full text-white font-semibold">Free cosmetic refurb completed by our power team</p>
+              <div class="flex justify-between items-center h-full text-white font-semibold">
+                <p>Free cosmetic refurb completed by our power team</p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                  <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>
+
+              </div>
               <div class="a a_2 hidden pt-5 leading-5" data-show="2">
                 <p>We will carry out a free cosmetic refurb and furnish your property to attract professional tenants. This won't cost you a penny.</p>
               </div>
 
             </div>
             <div class="how_it_work work_3 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer"  data-show="3">
-              <p class="flex justify-start items-center h-full text-white font-semibold">Viewings with professional tenants to fill your property</p>
+              <div class="flex justify-between items-center h-full text-white font-semibold">
+                <p>Viewings with professional tenants to fill your property</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                  <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>
+              </div>
               <div class="a a_3 hidden pt-5 leading-5" data-show="3">
                 <p>We conduct viewings with our company clients including East Midlands Airport, Bombardier, The Queens Medical and secure the very best professional tenants.
                 </p>
@@ -143,7 +166,14 @@
 
             </div>
             <div class="how_it_work work_4 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer"  data-show="4">
-              <p class="flex justify-start items-center h-full text-white font-semibold">Management and maintenance of your property</p>
+              <div class="flex justify-between items-center h-full text-white font-semibold">
+                <p>Management and maintenance of your property</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                  <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>
+                
+
+              </div>
               <div class="a a_4 hidden pt-5" data-show="4">
                 <p>
                   Hands-Off take over all of the management and maintenance of the property to give you a truly "hands-off" experience.
@@ -152,7 +182,15 @@
 
             </div>
             <div class="how_it_work work_5 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer" data-show="5">
-              <p class="flex justify-start items-center h-full text-white font-semibold">End of agreement purchase options</p>
+              <div class="flex justify-between items-center h-full text-white font-semibold">
+                <p>End of agreement purchase options</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                  <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>
+                
+
+              </div>
+              
               <div class="a a_5 hidden pt-5" data-show="5">
                 <p>At the end of the agreement, you will have three options:  i. To extend the contract ii. Have the property returned to you (obviously in fantastic condition) iii. Hands-Off can arrange the purchase of your property</p>
               </div>
@@ -165,155 +203,60 @@
         </div>
       </div>
     </section>
-    <section id="reviews">
-      <div>
-        <p> Here’s what our landlords have to say</p>
-        <div class="flex flex-wrap justify-around gap-1">
-          <div class="w-[15%]">
-            <h4>Nicky Wray</h4>
-            <p>October 9 2021</p>
-            <div class="flex gap-[5px]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              
-              
-
+   
+    
+    
+    <section class="section" id="contact">
+      <div class="mt-0 lg:mt-0 bg-orange-900 text-white text-center h-fit lg:h-[300px] px-[20px] lg:px-[170px] pt-[35px] pb-[35px] lg:pb-0 leading-[3rem] lg:leading-10">
+        <h4 class="text-white text-[12px] lg:text-[13px] font-semibold">FIND OUT IF WE ARE THE BEST SOLUTION FOR YOU</h4>
+        <h3 class="text-[20px] lg:text-[33px]">Let's Chat, Call us Today!</h3>
+        <button class="bg-white text-orange-800 px-10 py-3 font-semibold mt-[1rem]">
+          <a href="contact.html">MEET THE TEAM</a>
+          </button>
+       
+    </section>
+    <footer>
+      <div class="footer py-5 lg:py-9 px-8 lg:px-0 flex flex-wrap items-center h-[20rem] justify-around">
+        <div class="logo w-[100%] h-[7rem] lg:h-0 lg:w-[40%]">
+          <img src="" alt="Logo">
+        </div>
+        <div class="block lg:flex w-[100%] justify-around flex-wrap lg:w-[55%]">
+          <div>
+            <h2 class="text-orange-900 font-semibold mt-5 lg:mt-0">Quick Links</h2>
+            <nav class="mt-5">
+              <ul class="leading-8">
+                <li class="underline hover:text-orange-900"><a href='#rent'>What we do</a></li>
+                <li class="underline hover:text-orange-900"><a href="#howItWorks">How it works</a></li>
+                <li class="underline hover:text-orange-900"><a href="team.html">Meet the Team</a></li>
+                <li class="underline hover:text-orange-900"><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
           </div>
-          <h4>
-            We have found Hands Off excellent</h4>
-            <p>We have found Hands off Striaghtforward proffesional and Read More</p>
-          <div class="w-[15%]">
-            <h4>Nicky Wray</h4>
-            <p>October 9 2021</p>
-            <div class="flex gap-[5px]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              
-              
-
+          <div>
+            <h2 class="text-orange-900 font-semibold mt-5 lg:mt-0">Useful Links</h2>
+            <nav class="mt-5">
+              <ul class="leading-8">
+                 <li class="underline hover:text-orange-900"><a href="#">Terms and Condition</a></li>
+                <li class="underline hover:text-orange-900"><a href="#">Privacy Policy</a></li>
+              </ul>
+            </nav>
           </div>
-          <h4>
-            We have found Hands Off excellent</h4>
-            <p>We have found Hands off Striaghtforward proffesional and Read More</p>
-            
-
-          </div>
-          <div class="w-[15%]">
-            <h4>Nicky Wray</h4>
-            <p>October 9 2021</p>
-            <div class="flex gap-[5px]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              
-              
-
-          </div>
-          <h4>
-            We have found Hands Off excellent</h4>
-            <p>We have found Hands off Striaghtforward proffesional and Read More</p>
-
-          </div>
-          <div class="w-[15%]">
-            <h4>Nicky Wray</h4>
-            <p>October 9 2021</p>
-            <div class="flex gap-[5px]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              
-              
-
-          </div>
-          <h4>
-            We have found Hands Off excellent</h4>
-            <p>We have found Hands off Striaghtforward proffesional and Read More</p>
-
-          </div>
-          <div class="w-[25%]">
-
-          </div>
-          <div class="w-[25%]">
-            <h4>Nicky Wray</h4>
-            <p>October 9 2021</p>
-            <div class="flex gap-[5px]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-orange-500">
-                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
-              </svg>
-              
-              
-
-          </div>
-          <h4>
-            We have found Hands Off excellent</h4>
-            <p>We have found Hands off Striaghtforward proffesional and Read More</p>
-
+          <div>
+            <h2 class="text-orange-900 font-semibold mt-5 lg:mt-0">Akriss Properties  Limited</h2>
+            <p>Akriss Business Centre</p>
+            <p>
+              Chatham, Kent. ME4 4PD</p>
+            <nav class="mt-5">
+              <ul>
+                <li class="underline hover:text-orange-900"><a href="#">adeniji@akrissproperty.co.uk</a></li>
+                <li class="underline hover:text-orange-900"><a href="#">07423590266</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-        
+        <p class="py-8">Copyright © 2024 Akriss Properties Limted.</p>
       </div>
-    </section>
+    </footer>
+
   </body>
 </html>
