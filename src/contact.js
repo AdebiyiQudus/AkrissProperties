@@ -25,7 +25,7 @@ const closeNavs = e => {
     return;
   }
 };
-s
+
 LoadEvenListerners();
 
 // Revealing Section on Scroll
