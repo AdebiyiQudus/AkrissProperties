@@ -56,7 +56,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0,
 });
 
 allSections.forEach(function (section) {
@@ -73,5 +73,9 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  } else {
+    const select = e.target.closest('.text-sm').getAttribute('href');
+
+    window.location.href = `${select}`;
   }
 });

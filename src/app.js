@@ -1,5 +1,6 @@
 const howItWork = document.querySelectorAll('.a');
 const howItWorksContainer = document.querySelector('.how_it_work_container');
+const howItWorks = document.querySelectorAll('.how_it_work');
 
 // How it works functionality
 const openWork = e => {
@@ -8,23 +9,42 @@ const openWork = e => {
   if (!selectedWorkParent) return;
   const all = howItWork;
 
-  all.forEach(each => {
-    if (
-      each.classList.contains('open') ||
-      each.closest(`.how_it_work`).classList.remove('open')
-    ) {
+  all.forEach((each, i) => {
+    const init = () => {
       each.classList.remove('open');
       each.closest(`.how_it_work`).classList.remove('color');
-    } else {
+    };
+
+    init();
+
+    if (
+      !each.classList.contains('open') ||
+      !each.closest(`.how_it_work`).classList.remove('open')
+    ) {
       document
         .querySelector(`.a_${selectedWorkParent.dataset.show}`)
         .classList.add('open');
+
       document
         .querySelector(`.work_${selectedWorkParent.dataset.show}`)
         .classList.add('color');
+      document.querySelector(`.a_${selectedWorkParent.dataset.show}`);
     }
   });
 };
+
+// const toggleWork = e => {
+//   console.log(e.target);
+//   if (
+//     e.target.classList.contains('color') ||
+//     e.target.classList.contains('open')
+//   ) {
+//     e.target.classList.remove('color');
+//   }
+
+//   return;
+
+// };
 
 howItWorksContainer.addEventListener('click', openWork);
 
@@ -94,7 +114,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
 
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   } else {
-    const select = e.target.closest('.text-xs').getAttribute('href');
+    const select = e.target.closest('.text-sm').getAttribute('href');
 
     window.location.href = `${select}`;
   }
@@ -109,16 +129,17 @@ const navHeight = NavContainer.getBoundingClientRect().height;
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  // console.log(entry);
 
-  if (!entry.isIntersecting) NavContainer.classList.add('sticky');
-  else NavContainer.classList.remove('sticky');
+  if (!entry.isIntersecting) {
+    NavContainer.classList.add('sticky');
+    NavContainer.style.marginBottom = `-${navHeight}px`;
+  } else NavContainer.classList.remove('sticky');
 };
 
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  rootMargin: `-${navHeight}px`,
+  // rootMargin: `-100px`,
 });
 
 headerObserver.observe(header);

@@ -6,38 +6,39 @@
     <link href="../src/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Akriss Properties</title>
+    <script defer src="https://kit.fontawesome.com/d54d3fea72.js" crossorigin="anonymous"></script>
     <script defer src="src/app.js"></script>
   </head>
   <body>
-    <header class="header flex justify-between py-8 px-[6%]" id="navLinks">
-      <img src="" alt="Logo" />
+    <header class="header lg:h-[6rem] h-[10rem] flex items-center justify-between px-[6%] border-3 border-orange-900 border-y-orange-900" id="navLinks">
+      <div class="z-30 logo w-[50%] pl-[1rem] lg:pl-0 ml-[-24px] lg:w-[20%]">
+        <a href="index.html">
+          <img src="img/logo_new.png" alt="" class="">
+        </a>
+      </div>
       <nav class="hidden lg:block" id="navs">
         <ul class="nav__links flex justify-between items-center gap-6">
-          <li class="font-normal"><a href="#rent" class="text-xs nav__link">WHAT WE DO </a></li>
+          <li class="font-normal"><a href="#rent" class="text-sm nav__link">WHAT WE DO </a></li>
           <li class="font-normal">
-            <a href="#howItWorks" class="text-xs nav__link"
+            <a href="#howItWorks" class="text-sm nav__link"
               >HOW IT WORKS</a
             >
           </li>
           <li class="font-normal">
-            <a href="team.html" class="text-xs" target="_blank"
+            <a href="team.html" class="text-sm" target="_blank"
               >MEET THE TEAM</a
             >
           </li>
           <li class="bg-orange-600 lg:px-8 lg:w-fit w-[60%] lg:m-0 mx-auto px-3 py-3 text-white font-normal">
             
-            <a href="contact.html" class="text-xs" target="_blank"
-              <button class="text-xs font-normal">CONTACT US</button>
+            <a href="contact.html" class="text-sm" target="_blank"
+              <button class="text-sm font-normal">CONTACT US</button>
             </a>
           </li>
     
-          <li class="bg-orange-400 lg:px-8 lg:w-fit w-[60%] lg:m-0 mx-auto mt-5 px-3 py-3 text-white font-semibold">
-            <a href="#" target="_blank" class="text-xs">
-              <button class="text-xs font-normal">INVEST WITH US</button>
-            </a>
-          </li>
+        
         </ul>
       </nav>
         <div class="lg:hidden block w-fit z-30" id="bars">      
@@ -46,27 +47,29 @@
           <span class="w-[2rem] h-[0.15rem] bg-orange-900 lg:hidden block mt-2"></span>
       </div>
     </header>
-    <section class="section mt-3" id="hero">
+    <section class="section" id="hero">
       <div class="relative flex justify-between items-center flex-wrap z-0">
-        <img src="img/gg.avif" alt="" class=" w-[100%]">
-        <div class="bg-layout opacity-[0.5] absolute top-0 bottom-0 right-0 left-0 block z-1"></div>
-
-       
+        <img src="img/image_5.jpg" alt="" class="w-[100%] hidden lg:block">
+        <img src="img/image_5_mobile.jpg" alt="" class="block lg:hidden">
+        <div class="bg-layout opacity-[0.7] absolute top-0 bottom-0 right-0 left-0 block z-1"></div>
+        <div class="absolute flex justify-center w-[100%] text-white text-center  text-[2rem] lg:text-[3.5rem]">
+          <h2 class="text-center font-semibold text-orange-300">Your property is our priority</h2>
+        </div>
       </div>
-      
+     
     </section>
     <section>
       <div class="w-[100%] h-fit">
           <div class="block lg:flex flex-wrap text-center justify-between items-center bg-orange-900 py-8 lg:py-0 px-[2rem] lg:px-[10rem] lg:h-[7rem]]">
             <p
-            class="text-center  text-white text-[14px] leading-[2rem] lg:text-[1.5rem] z-10 lg:flex lg:flex-wrap lg:leading-[8rem]"
+            class="text-center text-white text-[1.5rem] leading-[2rem] lg:text-[2rem] z-10 lg:flex lg:flex-wrap lg:leading-[8rem]"
           >
-            Easy Property Management
+          Small Efforts, Big Returns.
           </p>
           <button
             class="mt-4 bg-white px-5 lg:px-8 py-2 lg:py-3 z-10 text-orange-900 font-semibold  lg:mt-[1rem]"
-          > <a href="contact.html" target="_blank
-          ">MEET THE TEAM</a>
+          > <a href="team.html" target="_blank
+          ">SPEAK WITH THE TEAM</a>
           </button>
             
           </div>
@@ -75,59 +78,90 @@
               <p class="text-center lg:text-start"> <span class="text-orange-900">Home</span> > Property Management</p>
             </div>
             <div class="lg:px-[10rem] px-6 pb-6">
-              <p class="lg:mt-5 mt-3 pt-[3rem] w-[100%]">We are one Stock Properties Mangananent company,</p>
-              <p class="pt-[2rem] leading-6 lg:w-[50%]">
-                Its aim is to provide high end accommodation to professionals, students, families
+              <p class="pt-[1rem] w-[100%] text-[15px] lg:text-[1.2rem]">Akriss Properties Limited is your go-to property management company.</p>
+              <p class="pt-[1.5rem] leading-7 lg:w-[50%] text-[15px] lg:text-[1.2rem]">
+                Our mission is to offer top-tier accommodation for professionals, students, and families.
               </p>
-              <p class="pt-[2rem] leading-6 lg:w-[50%]">We provide long term guaranteed rent of up to 5 years, and as well as management and maintenance of your property with no work from your end</p>
+              <p class="pt-[1.5rem] leading-7 lg:w-[50%] text-[15px] lg:text-[1.2rem]">We guarantee long-term rent for up to 5 years, handling all management and maintenance with no effort required from you.</p>
+              <div id="rent">
+
+              </div>
             </div>
           </div>
       </div>
     </section>
-    <section class="section" id="rent">
-      <div class="offer_1 block lg:mt-0 lg:flex flex-wrap items-center gap-4 bg-orange-800">
-        <div class="lg:w-[40%]">
-          <img src="img/bedroom_2.jpg" alt="">
-        </div>
-        <div class="pt-6 lg:pt-0 lg:w-[50%] text-white lg:leading-4 px-5 lg:px-10">
-          <h3 class="mt-6 text-[28px] lg:text-[30px] font-semibold">We Offer Premium Shared Homes </h3>
-          <p class="mt-4 pb-10 lg:pb-0 leading-7 lg:mt-9">We focus on premium shared homes (HMOs) and fully managed accommodations. Our proficiency and in-depth local understanding allow us to deliver exceptional service to both property owners and renters. We promise landlords rent for 3-5 years. No vacancies. No concealed charges. No commission</p>
-        </div>
+    <section class="section">
+      <div class="offer_1 block pt-5 lg:pt-[3rem] lg:mt-0 flex-wrap items-center gap-4 bg-orange-800">
+        <div class="w-[100%]">
+          <div class="lg:py-[3rem] py-5 lg:pt-0 text-white lg:leading-6 px-5 lg:w-[100%] lg:px-[10.5rem]">
+            <h3 class="mt-6 text-[28px] lg:text-[30px] font-semibold">We Offer Premium Shared Homes </h3>
+            <p class="mt-4 pb-6 lg:pb-0 leading-7 lg:mt-9 ] text-[15px] lg:text-[1.2rem]">We specialize in premium shared homes (HMOs) and fully managed serviced accommodations.</p> 
+            <p class="lg:mt-4 mt-2 pb-3 leading-7 text-[15px] lg:text-[1.2rem]"> Our expertise and deep local knowledge ensure we provide outstanding service to both property owners and renters. Here's what we offer:
+            </p>
+          </div>
+          <div class="relative flex justify-between items-center flex-wrap z-0">
+            <img src="img/bedroom_2.jpg" alt="" class="hidden lg:block w-[100%]">
+            <img src="img/bedroom_2_mobile.jpg" alt="" class="lg:hidden block">
+            <div class="bg-layout opacity-[0.5] absolute top-0 bottom-0 right-0 left-0 block z-1"></div>
+          </div>
+        </div> 
       </div>
     </section>
     <section class="section" id="refurb">
-      <div class="offer_1 block lg:mt-0 lg:flex flex-wrap justify-between items-center gap-4">
-        <div class="lg:pt-0 lg:w-[50%] lg:leading-4 px-5 lg:px-10">
-          <h3 class="mt-6 text-orange-900 text-[28px] lg:text-[30px] font-semibold">We finish cosmetic renovations for free. </h3>
-          <p class="mt-4 pb-10 lg:pb-0 leading-7 lg:mt-9">Our expert team will perform a complimentary cosmetic renovation* and completely furnish your property to appeal to our upscale professional tenants. This means you gain added value for your property and the assurance that it will be returned to you in excellent condition.</p>
-          <p class="italic text-orange-900 text-xs my-2 lg:my-3">*We understand our clients expect a superior quality of finish, and will allocate additional budget if the required work exceeds that of a standard rental.</p>
+      <div class="offer_1 block pt-5 lg:pt-[3rem] lg:mt-0 flex-wrap justify-between items-center gap-4">
+        <div class="lg:py-[3rem] pt-3 lg:pt-0 lg:leading-6 px-5 lg:w-[100%] lg:px-[10.5rem]">
+          <h3 class="mt-6 text-orange-900 text-[28px] lg:text-[30px] font-semibold">We finish cosmetic renovations for free </h3>
+          <p class="mt-4 pb-6 lg:pb-0 leading-7 lg:mt-9  text-[15px] lg:text-[1.2rem]">At the conclusion of our agreement, we offer several choices, including the option for Hands Off to buy your property if it fits your long-term objectives. This provides a seamless transition that aligns with your future plans.
+          </p>
+          <p class="mt-4 pb-6 lg:pb-0 leading-7 lg:mt-9 text-[15px] lg:text-[1.2rem]">
+            Enjoy peace of mind with no costs, no intermediaries, and no complications! Our straightforward approach ensures a hassle-free experience from start to finish.</p>
+          <p class="italic lg:pb-0 pb-6 text-orange-900 text-xs my-2 lg:my-3">*We understand our clients expect a superior quality of finish, and will allocate additional budget if the required work exceeds that of a standard rental.</p>
         </div>
-        <div class="lg:w-[40%]">
-          <img src="img/img_1.jpg" alt="">
+        <div class="relative flex justify-between items-center flex-wrap z-0">
+          <img src="img/img_1.jpg" alt="" class="w-[100%] lg:block hidden">
+          <img src="img/img_1_mobile.jpg" alt="" class="block lg:hidden">
+          <div class="bg-layout opacity-[0.5] absolute top-0 bottom-0 right-0 left-0 block z-1"></div>
         </div>
       </div>
     </section>
     <section class="section" id="purchase">
-      <div class="offer_1 flex flex-wrap-reverse mt-0 lg:mt-0 lg:flex lg:flex-wrap items-center gap-4 bg-orange-800">
-        <div class="lg:w-[40%]">
-          <img src="img/img_4.jpg" alt="">
-        </div>
-        <div class="pt-6 lg:pt-0 lg:w-[50%] text-white lg:leading-4 px-5 lg:px-10">
-          <h3 class="mt-6 text-[28px] lg:text-[30px] font-semibold">We provide ways to buy.
+      <div class="offer_1 block pt-[3rem] flex-wrap-reverse mt-0 lg:mt-0 lg:flex-wrap items-center gap-4 bg-orange-800">
+        <div class="lg:py-[3rem] pt-3 lg:pt-0 text-white lg:leading-6 px-5 lg:w-[100%] lg:px-[10.5rem]">
+          <h3 class="mt-6 text-[28px] lg:text-[30px] font-semibold">We provide ways to buy
           </h3>
-          <p class="mt-4 pb-10 lg:pb-0 leading-7 lg:mt-9">At the conclusion of our agreement, we offer several choices, including the option for Hands Off to buy your property if it fits your long-term objectives. No costs, no intermediaries, and no complications!</p>
+          <p class="mt-4 pb-10 lg:pb-0 leading-7 lg:mt-9 text-[15px] lg:text-[1.2rem]">
+            At the conclusion of our agreement, we offer several choices, including the option for Hands Off to buy your property if it fits your long-term objectives. This provides a tailored solution to meet your needs.</p>
+          <p class="mt-4 pb-10 lg:pb-0 leading-7 lg:mt-9 text-[15px] lg:text-[1.2rem]">
+              No costs, no intermediaries, and no complications! Our straightforward approach ensures a smooth and hassle-free experience.
+          </p>
+        </div>
+        <div class="relative flex justify-between items-center flex-wrap z-0">
+          <img src="img/img_4.jpg" alt="" class="w-[100%] lg:block hidden">
+          <img src="img/img_4_mobile.jpg" alt="" class="w-[100%] block lg:hidden">
+          <div class="bg-layout opacity-[0.5] absolute top-0 bottom-0 right-0 left-0 block z-1"></div>
+          <div id="howItWorks">
+
+          </div>
         </div>
       </div>
     </section>
-    <section class="section" id="howItWorks">
-      <div class="offer_1 block lg:mt-0 lg:flex flex-wrap justify-between items-center gap-4">
+    <section class="section">
+      <div class="offer_1 block lg:mt-0 lg:flex flex-wrap justify-center items-center lg:py-[3rem] lg:px-[10.5rem]">
         <div class="pt-8 lg:pt-0 lg:w-[50%] lg:leading-4 px-5 lg:px-10">
           <h3 class="mt-6 text-orange-900 text-[28px] lg:text-[30px] font-semibold">How it works.</h3>
           <p class="mt-4 pb-10 lg:pb-0 leading-7 lg:mt-9">            We make our Landlord onboarding process as fast and efficient as possible.</p>
           <div class="how_it_work_container">
-            <div class="how_it_work work_1 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer"  data-show="1">
+            <div class="how_it_work work_1 bg-orange-900 h-fit mt-5 py-10 px-5  cursor-pointer"  data-show="1">
               <div class="flex justify-between items-center h- text-white font-semibold">
-                <p>3-5 year agreements with guaranteed rent</p>
+                <div class="flex gap-3 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+                    <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" />
+                  </svg>
+                  
+                  <p>3-5 year agreements with guaranteed rent</p>
+
+
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                   <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
                 </svg>
@@ -139,7 +173,14 @@
             </div>
             <div class="how_it_work work_2 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer"  data-show="2">
               <div class="flex justify-between items-center h-full text-white font-semibold">
-                <p>Free cosmetic refurb completed by our power team</p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <div class="flex gap-3 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+                    <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" />
+                  </svg>
+                  <p>Free cosmetic refurb completed by our power team</p> 
+
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                   <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
                 </svg>
 
@@ -151,7 +192,12 @@
             </div>
             <div class="how_it_work work_3 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer"  data-show="3">
               <div class="flex justify-between items-center h-full text-white font-semibold">
-                <p>Viewings with professional tenants to fill your property</p>
+                <div class="flex gap-3 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+                    <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" />
+                  </svg>
+                  <p>Viewings with professional tenants to fill your property</p>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                   <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
                 </svg>
@@ -167,96 +213,103 @@
             </div>
             <div class="how_it_work work_4 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer"  data-show="4">
               <div class="flex justify-between items-center h-full text-white font-semibold">
-                <p>Management and maintenance of your property</p>
+                <div class="flex gap-3 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+                    <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" />
+                  </svg>
+                  <p>Management and maintenance of your property</p>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                   <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
                 </svg>
-                
-
               </div>
               <div class="a a_4 hidden pt-5" data-show="4">
                 <p>
-                  Hands-Off take over all of the management and maintenance of the property to give you a truly "hands-off" experience.
+                  Akriss Properties take over all of the management and maintenance of the property to give you a truly "hands-off" experience.
                 </p>
               </div>
 
             </div>
-            <div class="how_it_work work_5 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer" data-show="5">
+             <div class="how_it_work work_5 bg-orange-900 h-fit mt-5 py-10 px-5 cursor-pointer" data-show="5">
               <div class="flex justify-between items-center h-full text-white font-semibold">
-                <p>End of agreement purchase options</p>
+                <div class="flex gap-3 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+                    <path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" />
+                  </svg>
+                  <p>End of agreement purchase options</p>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                   <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
                 </svg>
-                
-
               </div>
               
               <div class="a a_5 hidden pt-5" data-show="5">
-                <p>At the end of the agreement, you will have three options:  i. To extend the contract ii. Have the property returned to you (obviously in fantastic condition) iii. Hands-Off can arrange the purchase of your property</p>
+                <p class="leading-8">At the end of the agreement, you will have three options: <br>  i. To extend the contract <br> ii. Have the property returned to you (obviously in fantastic condition) <br> iii. Hands-Off can arrange the purchase of your property</p>
               </div>
 
-            </div>
+            </div> 
           </div>
         </div>
-        <div class="mt-5 lg:mt-0 lg:w-[40%]">
+        <div class="mt-5 lg:mt-[3.5rem] lg:w-[40%]">
           <img src="img/img_2.jpg" alt="">
         </div>
       </div>
     </section>
    
-    
-    
     <section class="section" id="contact">
-      <div class="mt-0 lg:mt-0 bg-orange-900 text-white text-center h-fit lg:h-[300px] px-[20px] lg:px-[170px] pt-[35px] pb-[35px] lg:pb-0 leading-[3rem] lg:leading-10">
-        <h4 class="text-white text-[12px] lg:text-[13px] font-semibold">FIND OUT IF WE ARE THE BEST SOLUTION FOR YOU</h4>
-        <h3 class="text-[20px] lg:text-[33px]">Let's Chat, Call us Today!</h3>
-        <button class="bg-white text-orange-800 px-10 py-3 font-semibold mt-[1rem]">
-          <a href="contact.html">MEET THE TEAM</a>
+      <div class="mt-0 lg:mt-0 bg-orange-900 text-white text-center h-fit lg:h-fit px-[20px] lg:px-[170px] pt-[35px] pb-[35px] lg:pb-[15px] leading-[3rem] lg:leading-10">
+        <h1 class="text-white text-[23px] lg:text-[23px] font-semibold tracking-wide">Get In Touch</h1>
+        <p class="text-[13px] leading-[2rem] lg:leading-0 lg:text-[23px] lg:w-[70%] mt-[17px] mx-auto">Please use your preferred method below to contact us to discuss your requirements and any questions you may have.</p>
+        <div class="mt-5">
+          <a href="">
+            <i class="fa-brands fa-instagram px-2 text-[25px]"></i>
+          </a>
+          <a href="tel:07423590266">
+            <i class="fa-solid fa-phone px-2 text-[25px]"></i>
+          </a>
+          <a href="mailto:enquiries@akrissproperty.co.uk">
+            <i class="fa-solid fa-envelope px-2 text-[25px]"></i>
+          </a>
+          <a href="tel:07423590266">
+            <i class="fa-brands fa-whatsapp px-2 text-[25px]"></i>
+
+          </a>
+        </div>
+        <button class="bg-white text-orange-800 px-10 py-3 font-semibold mt-[1rem] hover:bg-orange-500 hover:text-white" style="transition: 0.4s all ease;">
+          <a href="mailto:enquiries@akrissproperty.co.uk">Get In Touch</a>
           </button>
-       
     </section>
     <footer>
-      <div class="footer py-5 lg:py-9 px-8 lg:px-0 flex flex-wrap items-center h-[20rem] justify-around">
-        <div class="logo w-[100%] h-[7rem] lg:h-0 lg:w-[40%]">
-          <img src="" alt="Logo">
-        </div>
-        <div class="block lg:flex w-[100%] justify-around flex-wrap lg:w-[55%]">
-          <div>
-            <h2 class="text-orange-900 font-semibold mt-5 lg:mt-0">Quick Links</h2>
-            <nav class="mt-5">
+      <div class="footer h-fit py-5 lg:py-9 lg:pt-9 lg:pb-[3rem] pb-4 px-8 lg:px-[10.5rem] block">
+        <div class="flex lg:flex w-[100%] justify-between flex-col lg:flex-row lg:w-[100%]">
+            <div class="logo w-[70%] lg:w-[22%] pt-0 mt-5 lg:mt-0">
+              <img src="img/logo_new_2-removebg-preview.png" alt="" class="w-[50%] lg:w-[100%]">
+              <div class="flex">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+          <div class="">
+            <h2 class="text-orange-900 font-semibold mt-7 lg:mt-0 text-[1.5rem] lg:text-[1.2rem]">Explore</h2>
+            <nav class="mt-4">
               <ul class="leading-8">
-                <li class="underline hover:text-orange-900"><a href='#rent'>What we do</a></li>
-                <li class="underline hover:text-orange-900"><a href="#howItWorks">How it works</a></li>
-                <li class="underline hover:text-orange-900"><a href="team.html">Meet the Team</a></li>
-                <li class="underline hover:text-orange-900"><a href="contact.html">Contact Us</a></li>
+                <li class="underline hover:text-orange-900  text-[15px] lg:text-[1.2rem]"><a href='#rent'>What we do</a></li>
+                <li class="underline hover:text-orange-900  text-[15px] lg:text-[1.2rem]"><a href="#howItWorks">How it works</a></li>
+                <li class="underline hover:text-orange-900  text-[15px] lg:text-[1.2rem]"><a href="team.html">Meet the Team</a></li>
+                <li class="underline hover:text-orange-900 text-[15px] lg:text-[1.2rem] "><a href="contact.html">Contact Us</a></li>
               </ul>
             </nav>
           </div>
-          <div>
-            <h2 class="text-orange-900 font-semibold mt-5 lg:mt-0">Useful Links</h2>
-            <nav class="mt-5">
-              <ul class="leading-8">
-                 <li class="underline hover:text-orange-900"><a href="#">Terms and Condition</a></li>
-                <li class="underline hover:text-orange-900"><a href="#">Privacy Policy</a></li>
-              </ul>
-            </nav>
+          <div class="mt-0 lg:mt-0">
+            <h2 class="text-orange-900 font-semibold mt-5 lg:mt-0  text-[1.5rem] lg:text-[1.2rem]">Akriss Properties  Limited</h2>
+            <p class="py-3 text-[15px] lg:text-[1.2rem]">Reistered Office Address: 18a Meadowbank Road,<br>Chatham, Kent. ME4 4PD</p>
+            <p class="py-1 text-[15px] lg:text-[1.2rem]">Email: enquiries@akrissproperty.co.uk</p>
+            <p class="py-1 text-[15px] lg:text-[1.2rem]">Phone Number:01322912463.</p>
+           <p class="py-1 text-[15px] lg:text-[1.2rem]">Company Number: 15812063.</p>
+           <p  class="py-1"> <a href="#" class="underline hover:text-orange-900">Privacy Policy</a> | <a href="" class="underline hover:text-orange-900">Terms and Condition</a></p>
           </div>
-          <div>
-            <h2 class="text-orange-900 font-semibold mt-5 lg:mt-0">Akriss Properties  Limited</h2>
-            <p>Akriss Business Centre</p>
-            <p>
-              Chatham, Kent. ME4 4PD</p>
-            <nav class="mt-5">
-              <ul>
-                <li class="underline hover:text-orange-900"><a href="#">adeniji@akrissproperty.co.uk</a></li>
-                <li class="underline hover:text-orange-900"><a href="#">07423590266</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <p class="py-8">Copyright © 2024 Akriss Properties Limted.</p>
+        </div> 
+        <p class="py-6 text-center">© Akriss Properties Limted 2024 All right reserved. </p>
       </div>
     </footer>
-
   </body>
 </html>
