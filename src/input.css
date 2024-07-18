@@ -96,6 +96,10 @@ body {
   line-height: 3rem;
   color: white;
 }
+
+.visible {
+  opacity: 1 !important;
+}
 .section {
   transition: transform 1s, opacity 1s;
 }

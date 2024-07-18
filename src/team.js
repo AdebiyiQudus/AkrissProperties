@@ -56,7 +56,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0,
+  threshold: 0.15,
 });
 
 allSections.forEach(function (section) {
@@ -66,12 +66,29 @@ allSections.forEach(function (section) {
 
 // Scroll onto view
 
+// document.querySelector('.nav__links').addEventListener('click', function (e) {
+//   e.preventDefault();
+
+//   // Matching strategy
+//   if (e.target.classList.contains('nav__link')) {
+//     const id = e.target.getAttribute('href');
+//     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+//   } else {
+//     const select = e.target.closest('.text-sm').getAttribute('href');
+
+//     window.location.href = `${select}`;
+//   }
+// });
+
 document.querySelector('.nav__links').addEventListener('click', function (e) {
   e.preventDefault();
 
   // Matching strategy
   if (e.target.classList.contains('nav__link')) {
+    const classname = e.target.id;
     const id = e.target.getAttribute('href');
+
+    document.querySelector(`.${classname}`).style.opacity = '1';
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   } else {
     const select = e.target.closest('.text-sm').getAttribute('href');

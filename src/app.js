@@ -33,19 +33,6 @@ const openWork = e => {
   });
 };
 
-// const toggleWork = e => {
-//   console.log(e.target);
-//   if (
-//     e.target.classList.contains('color') ||
-//     e.target.classList.contains('open')
-//   ) {
-//     e.target.classList.remove('color');
-//   }
-
-//   return;
-
-// };
-
 howItWorksContainer.addEventListener('click', openWork);
 
 // Navigation functionality
@@ -139,7 +126,22 @@ const stickyNav = function (entries) {
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  // rootMargin: `-100px`,
 });
 
 headerObserver.observe(header);
+
+function checkUrlForShowSection(e) {
+  const link = e.target.location.hash;
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams);
+  const showSection = urlParams.get('showSection');
+  console.log(showSection);
+  if (showSection === 'true') {
+    const targetSection = document.querySelector(`${link}`);
+    targetSection.classList.add('visible');
+    // Optional: Scroll to the target section
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+window.onload = checkUrlForShowSection;
