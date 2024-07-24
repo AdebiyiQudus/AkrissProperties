@@ -134,8 +134,10 @@ function checkUrlForShowSection(e) {
   const link = e.target.location.hash;
   const urlParams = new URLSearchParams(window.location.search);
   console.log(urlParams);
+
   const showSection = urlParams.get('showSection');
   console.log(showSection);
+  
   if (showSection === 'true') {
     const targetSection = document.querySelector(`${link}`);
     targetSection.classList.add('visible');
