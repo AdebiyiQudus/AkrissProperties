@@ -60,6 +60,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav__link')) {
     const classname = e.target.id;
     const id = e.target.getAttribute('href');
+    
     document.querySelector(`.${classname}`).style.opacity = '1';
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   } else {
