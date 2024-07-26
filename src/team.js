@@ -75,7 +75,6 @@ allSections.forEach(function (section) {
 //     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
 //   } else {
 //     const select = e.target.closest('.text-sm').getAttribute('href');
-
 //     window.location.href = `${select}`;
 //   }
 // });
