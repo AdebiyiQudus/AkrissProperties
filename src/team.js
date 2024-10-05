@@ -64,7 +64,7 @@ allSections.forEach(function (section) {
   section.classList.add('section--hidden');
 });
 
-// Scroll onto view
+// Scroll onto view team
 
 // document.querySelector('.nav__links').addEventListener('click', function (e) {
 //   e.preventDefault();
